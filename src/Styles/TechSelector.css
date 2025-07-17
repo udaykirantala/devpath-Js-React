@@ -1,5 +1,7 @@
-.techSelectorHeadings{
+.techSelectorContainer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.techSelectorHeadings{
     background-image: linear-gradient(to right,rgba(0, 0, 255, 0.821),rgba(128, 0, 128, 0.821));
     text-align: center;
     border-radius: 5px;
@@ -25,7 +27,7 @@
     margin: 0% 20px;
 }
 .techSelectorJsSection,.techSelectorReactSection{
-    box-shadow: 5px 5px 2.5px gray;
+    box-shadow: 2.5px 2.5px 5px gray;
     border: 1px solid rgba(128, 128, 128, 0.433);
     padding: 30px;
     border-radius: 20px;
@@ -49,7 +51,7 @@
     font-size: 20px;
     color: white;
     border-radius: 20px;
-    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.821),rgba(128, 0, 128, 0.821)) ;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.821),rgba(128, 0, 128, 0.821));
 }
 .techSelectorJsSection:hover{
     transform: scale(1.02);
@@ -58,4 +60,40 @@
 .techSelectorReactSection:hover{
     transform: scale(1.02);
     transition: all 0.5s ease-in-out;
+}
+.techSelectorExplorSection{
+    position: relative;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.821),rgba(128, 0, 128, 0.821));
+    border-radius: 5px;
+}
+.techSelectorExplorSectionheading{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    bottom: 30px;
+}
+/*  */
+.exploreCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 280px;
+  margin: 1rem;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.exploreCard:hover {
+  border-color: #a855f7;
+  box-shadow: 0px 4px 12px rgba(168, 85, 247, 0.2);
+}
+
+.exploreCardIcon {
+  color: #6d28d9;
+  margin-bottom: 10px;
+}
+.techSelectorExplorSectionCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

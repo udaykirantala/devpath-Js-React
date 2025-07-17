@@ -1,10 +1,13 @@
+import { ExploreCard } from '../Componets/TechSelector/ExploreCard'
 import '../Styles/TechSelector.css'
+import { features } from '../Utlites/techSelector'
 import Jsimg from '../assets/SelectionJs.png'
 import Reactimg from '../assets/SelectionReact.png'
+
 export const TechSelector=()=>{
     return(
         <>
-        <div>
+        <div className='techSelectorContainer'>
             <div className='techSelectorHeadings'>
                 <h3>Welcome to DevPath – JS & Reac</h3>
                 <h2>Choose Your Learning Path</h2>
@@ -41,6 +44,18 @@ export const TechSelector=()=>{
                         <button>Start React</button>
                     </div>
                 </div>
+            </div>
+            <div className='techSelectorExplorSection'>
+                <div className='techSelectorExplorSectionheading'>
+                    <h2>Explore Our Features</h2>
+                </div>
+            </div>
+            <div className='techSelectorExplorSectionCards'>
+                {features.map((item)=>(
+                    <div key={item.id}>
+                        <ExploreCard icon={item.icon} title={item.title} description={item.description}/>
+                    </div>
+                ))}
             </div>
         </div>
         </>
